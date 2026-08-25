@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The digital corner of Neel Upadhyay, known online as dexorto." />
+    <title>dexorto — Neel Upadhyay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="dexorto home">dexorto<span>_</span></a>
+      <nav class="header-links" aria-label="Social links">
+        <a class="header-link" href="https://github.com/Dexorto1" target="_blank" rel="noreferrer">github <span>↗</span></a>
+        <a class="header-link" href="https://www.instagram.com/dexorto" target="_blank" rel="noreferrer">instagram <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow"><span class="status-dot"></span> Neel Upadhyay / portfolio</p>
+        <h1>Hey, I’m <em>Neel</em><br />Upadhyay.</h1>
+        <div class="hero-bottom">
+          <p class="intro">I’m the person behind <strong>dexorto</strong> — building through code, Linux, open source, and community.</p>
+          <a class="scroll-cue" href="#journey">explore journey <span>↓</span></a>
+        </div>
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="grid-mark" aria-hidden="true"></div>
+      </section>
+
+      <section class="journey" id="journey">
+        <div class="section-head">
+          <p class="eyebrow">01 / the timeline</p>
+          <h2>How it <em>started.</em></h2>
+          <p>Small discoveries turned into a world I’m still excited to explore.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="moment reveal">
+            <p class="year">2024</p>
+            <div class="moment-body">
+              <p class="index">// 01</p>
+              <h3>The first <em>spark.</em></h3>
+              <p>Got introduced to coding and the creative, problem-solving world behind it. That was the year I started looking under the hood.</p>
+              <div class="tags"><span>coding</span><span>curiosity</span><span>first steps</span></div>
+            </div>
+          </article>
+
+          <article class="moment reveal">
+            <p class="year">2025</p>
+            <div class="moment-body">
+              <p class="index">// 02</p>
+              <h3>Found the <em>open world.</em></h3>
+              <p>Learned my way around various Linux distros and discovered GitHub — a whole new way to learn, share, and build in the open.</p>
+              <div class="tags"><span>linux</span><span>distros</span><span>github</span></div>
+            </div>
+          </article>
+
+          <article class="moment reveal">
+            <p class="year">2026</p>
+            <div class="moment-body">
+              <p class="index">// 03</p>
+              <h3>Made it <em>real.</em></h3>
+              <p>Created a few Discord-focused projects and kept turning what I learned into things people can actually use.</p>
+              <div class="tags"><span>discord</span><span>projects</span><span>building</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="now">
+        <p class="eyebrow">02 / right now</p>
+        <div class="now-layout">
+          <h2>Still at the<br /><em>beginning.</em></h2>
+          <div>
+            <p>I like the feeling of not knowing something yet — and then figuring it out. This site is a small log of that journey.</p>
+            <!-- PASTE YOUR DISCORD INVITE, EMAIL, OR PROFILE LINK between the quotes below -->
+            <a class="pill" href="https://discord.com" target="_blank" rel="noreferrer">connect with me <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">03 / contact</p>
+          <h2>Let’s build<br /><em>something.</em></h2>
+          <p>Have a project, an idea, or just want to connect? Send me a message.</p>
+          <!-- Replace hello@dexorto.dev with your email address -->
+          <div class="contact-links">
+            <a href="mailto:hello@dexorto.dev">hello@dexorto.dev <span>↗</span></a>
+            <a href="https://www.instagram.com/dexorto" target="_blank" rel="noreferrer">instagram <span>↗</span></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>Your name<input name="name" type="text" autocomplete="name" required maxlength="80" /></label>
+          <label>Your email<input name="email" type="email" autocomplete="email" required maxlength="120" /></label>
+          <label>Message<textarea name="message" required maxlength="2000" rows="5"></textarea></label>
+          <button type="submit">send message <span>↗</span></button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top">dexorto<span>_</span></a>
+      <p>© <span id="current-year"></span> Neel Upadhyay</p>
+      <p>made with curiosity ✦</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
