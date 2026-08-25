@@ -13,7 +13,7 @@ document.querySelectorAll('.reveal').forEach((item, index) => {
 
 
 // Replace with your deployed Cloudflare Worker URL.
-const CONTACT_ENDPOINT = "https://your-worker.your-subdomain.workers.dev/contact";
+const CONTACT_ENDPOINT = "https://dexorto-contact.dexorto-website.workers.dev/contact";
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 contactForm.addEventListener("submit", async (event) => {
