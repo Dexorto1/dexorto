@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
     <div class="noise" aria-hidden="true"></div>
+    <div id="cursor-ambient-bg" class="cursor-ambient-bg" aria-hidden="true"></div>
+    <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" class="cursor-ring" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="dexorto home">dexorto<span>_</span></a>
       <nav class="header-links" aria-label="Social links">
@@ -35,13 +39,15 @@
 
       <section class="journey" id="journey">
         <div class="section-head">
-          <p class="eyebrow">01 / the timeline</p>
-          <h2>How it <em>started.</em></h2>
-          <p>Small discoveries turned into a world I’m still excited to explore.</p>
+          <div class="section-title-wrap">
+            <p class="eyebrow">01 / the timeline</p>
+            <h2>How it <em>started.</em></h2>
+          </div>
+          <p class="section-desc">Small discoveries turned into a world I’m still excited to explore.</p>
         </div>
 
         <div class="timeline">
-          <article class="moment reveal">
+          <article class="moment reveal custom-spotlight-card">
             <p class="year">2024</p>
             <div class="moment-body">
               <p class="index">// 01</p>
@@ -51,7 +57,7 @@
             </div>
           </article>
 
-          <article class="moment reveal">
+          <article class="moment reveal custom-spotlight-card">
             <p class="year">2025</p>
             <div class="moment-body">
               <p class="index">// 02</p>
@@ -61,7 +67,7 @@
             </div>
           </article>
 
-          <article class="moment reveal">
+          <article class="moment reveal custom-spotlight-card">
             <p class="year">2026</p>
             <div class="moment-body">
               <p class="index">// 03</p>
@@ -73,8 +79,155 @@
         </div>
       </section>
 
+      <section class="skills" id="skills">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <p class="eyebrow">02 / capabilities</p>
+            <h2>Tools &amp;<br /><em>stack.</em></h2>
+          </div>
+          <p class="section-desc">Languages, environments, and tools I use to turn curiosity into functional software.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal custom-spotlight-card">
+            <div class="skill-icon">// 01</div>
+            <h3>Languages</h3>
+            <p>Core programming languages for automation, algorithms, and system-level experimentation.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>C++</span>
+              <span>Bash</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal custom-spotlight-card">
+            <div class="skill-icon">// 02</div>
+            <h3>Web &amp; Backend</h3>
+            <p>Building responsive APIs, asynchronous services, and modern interactive user interfaces.</p>
+            <div class="tags">
+              <span>FastAPI</span>
+              <span>Node.js</span>
+              <span>React 19</span>
+              <span>REST APIs</span>
+              <span>Cloudflare</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal custom-spotlight-card">
+            <div class="skill-icon">// 03</div>
+            <h3>Systems &amp; OS</h3>
+            <p>Deep familiarity with UNIX environments, custom window managers, and workflow automation.</p>
+            <div class="tags">
+              <span>Linux</span>
+              <span>Hyprland</span>
+              <span>Git &amp; GitHub</span>
+              <span>Docker</span>
+              <span>Neovim</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal custom-spotlight-card">
+            <div class="skill-icon">// 04</div>
+            <h3>Specializations</h3>
+            <p>Domain-specific systems, bot architectures, and high-performance automation pipelines.</p>
+            <div class="tags">
+              <span>Automation Engines</span>
+              <span>Discord Bots</span>
+              <span>Web Scraping</span>
+              <span>CLI Tooling</span>
+              <span>WebGL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-head">
+          <div class="section-title-wrap">
+            <p class="eyebrow">03 / featured works</p>
+            <h2>Selected<br /><em>projects.</em></h2>
+          </div>
+          <p class="section-desc">A showcase of tools, automation engines, and platforms engineered from scratch.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal custom-spotlight-card">
+            <div class="project-meta">
+              <span class="index">// 01</span>
+              <span class="project-type">Web Platform &amp; Automation</span>
+            </div>
+            <h3>ClientForge</h3>
+            <p>An intelligent client onboarding and headless automation portal built for streamlining B2B service workflows and multi-step pipeline delivery.</p>
+            <div class="tags">
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>Playwright</span>
+              <span>Async</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Dexorto1" target="_blank" rel="noreferrer">source code <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal custom-spotlight-card">
+            <div class="project-meta">
+              <span class="index">// 02</span>
+              <span class="project-type">Community &amp; Bot Engine</span>
+            </div>
+            <h3>Dex-Bot Ecosystem</h3>
+            <p>A modular, high-uptime Discord automation architecture featuring dynamic command routing, guild moderation, and asynchronous event telemetry.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>discord.py</span>
+              <span>SQLite</span>
+              <span>APIs</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Dexorto1" target="_blank" rel="noreferrer">source code <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal custom-spotlight-card">
+            <div class="project-meta">
+              <span class="index">// 03</span>
+              <span class="project-type">Developer CLI Tool</span>
+            </div>
+            <h3>SmartMock AI</h3>
+            <p>Command-line developer utility designed to synthesize production-like mock data schemas and instantaneous mock HTTP API endpoints for local testing.</p>
+            <div class="tags">
+              <span>CLI</span>
+              <span>Synthetic Data</span>
+              <span>Python</span>
+              <span>Pydantic</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Dexorto1" target="_blank" rel="noreferrer">source code <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal custom-spotlight-card">
+            <div class="project-meta">
+              <span class="index">// 04</span>
+              <span class="project-type">Security &amp; Cryptography</span>
+            </div>
+            <h3>Bit-Vault</h3>
+            <p>Zero-Knowledge password manager &amp; AES-256 encrypted file vault with 2FA TOTP &amp; breach audit.</p>
+            <div class="tags">
+              <span>Zero-Knowledge</span>
+              <span>AES-256</span>
+              <span>2FA TOTP</span>
+              <span>Breach Audit</span>
+              <span>Security</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/Dexorto1" target="_blank" rel="noreferrer">source code <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="now">
-        <p class="eyebrow">02 / right now</p>
+        <p class="eyebrow">04 / right now</p>
         <div class="now-layout">
           <h2>Still at the<br /><em>beginning.</em></h2>
           <div>
@@ -87,7 +240,7 @@
 
       <section class="contact" id="contact">
         <div class="contact-copy">
-          <p class="eyebrow">03 / contact</p>
+          <p class="eyebrow">05 / contact</p>
           <h2>Let’s build<br /><em>something.</em></h2>
           <p>Have a project, an idea, or just want to connect? Send me a message.</p>
           <!-- Replace hello@dexorto.dev with your email address -->
@@ -111,6 +264,6 @@
       <p>© <span id="current-year"></span> Neel Upadhyay</p>
       <p>made with curiosity ✦</p>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

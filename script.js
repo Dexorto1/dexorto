@@ -1,3 +1,57 @@
+import initParticles from './Particles.js';
+import { initAllSpotlights } from './SpotlightCard.js';
+import initDecryptedText from './DecryptedText.js';
+import initCustomCursor from './Cursor.js';
+
+// Initialize Custom Interactive Cursor & Background Light Interaction
+initCustomCursor();
+
+// Initialize 3D Particle Background
+const particlesContainer = document.getElementById('particles-bg');
+if (particlesContainer) {
+  initParticles(particlesContainer, {
+    particleColors: ["#F97316"],
+    particleCount: 200,
+    particleSpread: 10,
+    speed: 0.1,
+    particleBaseSize: 100,
+    moveParticlesOnHover: true,
+    alphaParticles: false,
+    disableRotation: false,
+  });
+}
+
+// Initialize SpotlightCard hover effect on topic cards
+initAllSpotlights('.custom-spotlight-card', {
+  spotlightColor: 'rgba(0, 229, 255, 0.2)',
+  radius: 280
+});
+
+// Initialize DecryptedText on Hero Headline & Intro (runs strictly once per page load)
+const heroTitle = document.querySelector('.hero h1');
+if (heroTitle) {
+  initDecryptedText(heroTitle, {
+    text: "Hey, I’m Neel\nUpadhyay.",
+    speed: 35,
+    maxIterations: 18,
+    animateOn: 'view',
+    revealDirection: 'start',
+    characters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~"
+  });
+}
+
+const heroIntro = document.querySelector('.hero .intro');
+if (heroIntro) {
+  initDecryptedText(heroIntro, {
+    text: "I’m the person behind dexorto — building through code, Linux, open source, and community.",
+    speed: 25,
+    maxIterations: 15,
+    animateOn: 'view',
+    revealDirection: 'start',
+    characters: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
+  });
+}
+
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
 const observer = new IntersectionObserver((entries) => {

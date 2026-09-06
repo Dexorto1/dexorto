@@ -1,0 +1,14 @@
+/* DecryptedText Scramble Animation Styles */
+.encrypted {
+  color: #f97316;
+  font-family: "DM Mono", monospace;
+  opacity: 0.9;
+  text-shadow: 0 0 10px rgba(249, 115, 22, 0.5);
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.revealed {
+  color: inherit;
+  font-family: inherit;
+}

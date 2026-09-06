@@ -1,0 +1,33 @@
+/* SpotlightCard Styles */
+.custom-spotlight-card {
+  position: relative;
+  overflow: hidden;
+  --spotlight-color: rgba(0, 229, 255, 0.2);
+  --spotlight-radius: 280px;
+}
+
+.custom-spotlight-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    circle var(--spotlight-radius, 280px) at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    var(--spotlight-color, rgba(0, 229, 255, 0.2)),
+    transparent 80%
+  );
+  z-index: 1;
+}
+
+.custom-spotlight-card.spotlight-active::before,
+.custom-spotlight-card:hover::before {
+  opacity: 1;
+}
+
+.custom-spotlight-card > * {
+  position: relative;
+  z-index: 2;
+}
