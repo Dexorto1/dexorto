@@ -117,11 +117,11 @@ footer p { margin:0; }
   opacity: 0;
   transition: opacity 0.5s ease;
   background: radial-gradient(
-    550px circle at var(--cursor-client-x, -999px) var(--cursor-client-y, -999px),
-    rgba(168, 85, 247, 0.35) 0%,
-    rgba(147, 51, 234, 0.22) 28%,
-    rgba(192, 132, 252, 0.12) 50%,
-    rgba(126, 34, 206, 0.05) 70%,
+    365px circle at var(--cursor-client-x, -999px) var(--cursor-client-y, -999px),
+    rgba(168, 85, 247, 0.12) 0%,
+    rgba(147, 51, 234, 0.07) 28%,
+    rgba(192, 132, 252, 0.04) 50%,
+    rgba(126, 34, 206, 0.015) 70%,
     transparent 82%
   );
 }
@@ -136,7 +136,7 @@ footer p { margin:0; }
 
 @keyframes cursorBgPulse {
   0% {
-    filter: brightness(2.2) contrast(1.25);
+    filter: brightness(1.4) contrast(1.1);
   }
   100% {
     filter: brightness(1) contrast(1);
@@ -156,7 +156,7 @@ footer p { margin:0; }
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 0 8px rgba(192, 132, 252, 1), 0 0 16px rgba(168, 85, 247, 0.85), 0 0 24px rgba(147, 51, 234, 0.6);
+  box-shadow: 0 0 5px rgba(192, 132, 252, 0.35), 0 0 10px rgba(168, 85, 247, 0.28), 0 0 16px rgba(147, 51, 234, 0.2);
   opacity: 0;
 }
 
@@ -177,7 +177,7 @@ footer p { margin:0; }
               border-color 0.25s ease,
               background-color 0.25s ease,
               opacity 0.3s ease;
-  box-shadow: 0 0 12px rgba(168, 85, 247, 0.45), inset 0 0 8px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.15), inset 0 0 5px rgba(168, 85, 247, 0.05);
   opacity: 0;
 }
 
@@ -186,13 +186,13 @@ footer p { margin:0; }
   width: 104px;
   height: 104px;
   border-color: #e879f9;
-  background-color: rgba(168, 85, 247, 0.18);
-  box-shadow: 0 0 21px rgba(192, 132, 252, 0.65), inset 0 0 12px rgba(192, 132, 252, 0.25);
+  background-color: rgba(168, 85, 247, 0.06);
+  box-shadow: 0 0 14px rgba(192, 132, 252, 0.22), inset 0 0 8px rgba(192, 132, 252, 0.08);
 }
 
 .cursor-dot.cursor-hover {
   background-color: #f0abfc;
-  box-shadow: 0 0 11px rgba(240, 171, 252, 1), 0 0 20px rgba(168, 85, 247, 0.95);
+  box-shadow: 0 0 7px rgba(240, 171, 252, 0.35), 0 0 13px rgba(168, 85, 247, 0.3);
 }
 
 /* Card / Topic Hover Reticle */
@@ -201,8 +201,8 @@ footer p { margin:0; }
   height: 84px;
   border-color: #c084fc;
   border-style: dashed;
-  background-color: rgba(147, 51, 234, 0.12);
-  box-shadow: 0 0 18px rgba(168, 85, 247, 0.5);
+  background-color: rgba(147, 51, 234, 0.04);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.16);
   animation: cursorReticleSpin 10s linear infinite;
 }
 
@@ -214,14 +214,11 @@ footer p { margin:0; }
 /* Active Click State */
 .cursor-ring.cursor-active {
   border-color: #f5d0fe;
-  background-color: rgba(192, 132, 252, 0.32);
-  box-shadow: 0 0 22px rgba(192, 132, 252, 0.85);
+  background-color: rgba(192, 132, 252, 0.1);
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.28);
 }
 
 .cursor-dot.cursor-active {
   background-color: #ffffff;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
-
-
-
